@@ -6,6 +6,13 @@ type Props = {
   params: { id: string };
 };
 
+//!En Build Time
+export const generateStaticParams = async () => {
+  const staticArray = Array.from({ length: 151 }).map((_, i) => `${i + 1}`);
+
+  return staticArray.map((id) => ({ id: id }));
+};
+
 export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
   const { id, name } = await getPokemon(params.id);
 

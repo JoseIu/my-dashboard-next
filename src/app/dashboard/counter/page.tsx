@@ -1,4 +1,4 @@
-import { CartCounter } from '@/app/components/shopping-card/components/CartCounter';
+import { CartCounter } from '@/components';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

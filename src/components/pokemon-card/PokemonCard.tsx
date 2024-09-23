@@ -18,7 +18,7 @@ export const PokemonCard = ({ pokemon }: PokemonCardProps) => {
       />
       <h3 className="capitalize">{pokemon.name}</h3>
       <Link
-        href={`/dashboard/pokemon/${pokemon.id}`}
+        href={`/dashboard/pokemos/${pokemon.name}`}
         className="py-1 px-6 text-white font-normal border-solid border rounded-full  border-sky-100"
       >
         Details

@@ -1,5 +1,11 @@
 import Image from 'next/image';
-import { IoBriefcaseOutline, IoCalculatorOutline, IoFootballOutline, IoLogoReact } from 'react-icons/io5';
+import {
+  IoBriefcaseOutline,
+  IoCalculatorOutline,
+  IoFootballOutline,
+  IoHeartOutline,
+  IoLogoReact,
+} from 'react-icons/io5';
 import { SideBarMenuItem } from '../sidebar-menu-item/SideBarMenuItem';
 
 const menuItem = [
@@ -20,6 +26,12 @@ const menuItem = [
     icon: <IoFootballOutline size={25} className="self-start" />,
     title: 'Pokemos',
     subTitle: 'Static Generation',
+  },
+  {
+    path: '/dashboard/pokemos/favorite',
+    icon: <IoHeartOutline size={25} className="self-start" />,
+    title: 'Favorite Pokemos',
+    subTitle: 'List of Favorite Pokemos',
   },
 ];
 

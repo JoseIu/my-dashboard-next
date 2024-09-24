@@ -1,3 +1,4 @@
+export * from './pokemo-fav-grid/PokemonFavGrid';
 export * from './pokemon-card/PokemonCard';
 export * from './shopping-card/components/CartCounter';
 export * from './sidebar-menu-item/SideBarMenuItem';
